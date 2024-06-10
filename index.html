@@ -4,43 +4,60 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=, initial-scale=1.0" />
     <link rel="stylesheet" href="src/styling.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gorditas:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Delius&display=swap"
+      rel="stylesheet"
+    />
     <title>Document</title>
   </head>
   <body>
-    <header>
-      <h1>AI Baking Recipes Generator</h1>
-    </header>
-    <main>
-      <form>
-        <input
-          type="text"
-          placeholder="Enter the type of baked recipe (cake, bread, cookies...)"
-          autofocus
-          required
-          autocomplete="off"
-        />
-        <div>The recipe will go here</div>
-        <input type="submit" />
-      </form>
-    </main>
-    <footer>
-      This project was coded by
-      <a href="https://github.com/JocelyneMorales" target="_blank"
-        >Josselyn Morales Martinez</a
-      >
-      and is
-      <a
-        href="https://github.com/JocelyneMorales?tab=repositories"
-        target="_blank"
-        >open sourced on GitHub</a
-      >
-      and is
-      <a
-        href="https://ai-poem-generator-project-final.netlify.app/"
-        target="_blank"
-        >hosted on Netlify</a
-      >
-    </footer>
+    <div class="container">
+      <header>
+        <h1>AI Baking Recipes Generator</h1>
+      </header>
+      <main>
+        <form>
+          <input
+            type="text"
+            placeholder="Enter the type of baking recipe (cake, bread, cookies...)"
+            autofocus
+            required
+            autocomplete="off"
+            class="instructions"
+          />
+          <input type="submit" class="submit-button" />
+        </form>
+        <div class="recipe">The recipe will go here</div>
+      </main>
+      <footer>
+        This project was coded by
+        <a href="https://github.com/JocelyneMorales" target="_blank"
+          >Josselyn Morales Martinez</a
+        >
+        and is
+        <a
+          href="https://github.com/JocelyneMorales?tab=repositories"
+          target="_blank"
+          >open sourced on GitHub</a
+        >
+        and is
+        <a
+          href="https://ai-poem-generator-project-final.netlify.app/"
+          target="_blank"
+          >hosted on Netlify</a
+        >
+      </footer>
+    </div>
     <script src="src/index.js"></script>
   </body>
 </html>
