@@ -18,19 +18,28 @@ h1 {
   margin: 120px auto;
   max-width: 600px;
 }
-form {
-  padding: 20px;
+.form-container {
+  padding: 15px 20px;
   background-color: #fddad6;
+  /* line-height: 1cm; */
   border-radius: 10px;
-  display: flex;
   margin-bottom: 30px;
-  /* box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px; */
   box-shadow: rgba(219, 189, 204, 0.733) 0px 1px 5px,
     rgba(249, 247, 248, 0.083) 0px 0px 2px 2px;
+  color: rgba(37, 37, 37, 0.587);
+}
+small {
+  color: #c98f38;
+}
+form {
+  display: flex;
+
+  /* box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px; */
 }
 input {
   background-color: #fdf4e3;
   font-family: "Heebo", sans-serif;
+  text-transform: capitalize;
 }
 
 .instructions {
@@ -60,6 +69,9 @@ input {
   border-left: 3px solid #f79489;
   box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
 }
+.hidden {
+  display: none;
+}
 .recipe strong {
   color: #d3786e;
   font-size: 30px;
@@ -74,4 +86,19 @@ footer {
   text-align: center;
   font-size: 14px;
   margin-top: 30px;
+}
+
+.generating {
+  animation: blink-animation 1s steps(5, start) infinite;
+}
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
 }
