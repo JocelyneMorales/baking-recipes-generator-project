@@ -54,11 +54,21 @@ input {
 .recipe {
   font-size: 16px;
   background-color: #fdf4e3;
-  padding: 20px;
-  line-height: 2px;
+  padding: 24px;
+  line-height: 35px;
   font-weight: 400;
   border-left: 3px solid #f79489;
   box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+}
+.recipe strong {
+  color: #d3786e;
+  font-size: 30px;
+  font-family: "Gorditas", serif;
+}
+.recipe em {
+  font-size: 20px;
+  color: #c98f38;
+  text-decoration: underline;
 }
 footer {
   text-align: center;
